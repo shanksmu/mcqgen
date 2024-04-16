@@ -4,6 +4,9 @@ import json
 import traceback
 from src.mcqgenerator.logger import logging
 
+import warnings
+warnings.filterwarnings("ignore")
+
 
 def read_file(file):
     if file.name.endswith(".pdf"):
@@ -25,20 +28,21 @@ def read_file(file):
 
 
 def get_table_data(quiz_str):
+
     try:
         quiz_dict = json.loads(quiz_str)
         quiz_table_data = []
 
         for key, value in quiz_dict.items():
             mcq = value["mcq"]
-            options = " | ".join(
+            options = " || ".join(
                 [
-                    f"{option}: {option_value}"
-                    for option, option_value in value["options"].items()
+                    f"{option}: {option_value}" for option, option_value in value["options"].items()
                 ]
             )
-        correct = value["correct"]
-        quiz_table_data.append({"MCQ": mcq, "Choices": options, "Correct": correct})
+            correct = value["correct"]
+            quiz_table_data.append({"MCQ": mcq, "Choices": options, "Correct": correct})
+
 
         return quiz_table_data
     
