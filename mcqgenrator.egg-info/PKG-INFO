@@ -1,11 +1,10 @@
-Metadata-Version: 2.1
+Metadata-Version: 1.0
 Name: mcqgenrator
 Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
 Author: Shashank Bhardwaj
 Author-email: shanksmu@gmail.com
-Requires-Dist: openai
-Requires-Dist: langchain
-Requires-Dist: streamlit
-Requires-Dist: python-dotenv
-Requires-Dist: PyPDF2
-Requires-Dist: langchain-community
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

@@ -12,7 +12,7 @@ from src.mcqgenerator.logger import logging
 from langchain.callbacks import get_openai_callback
 
 
-with open("/Users/sbhardwa/Documents/Learning/Machine Learning & AI/Gen AI/mcqgen/response.json", 'r') as file:
+with open("/root/mcqgen/response.json", 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 st.title("MCQs Creator  Application with Lanchain")
