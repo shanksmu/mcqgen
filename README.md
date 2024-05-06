@@ -1,3 +1,6 @@
+Use Generative AI models to create a MCQ generator on any specific topic
+
+
 1. Setup a new server - can use AWS, GCP, Linode
 2. Update/Upgrade the instance
     - sudo apt update
